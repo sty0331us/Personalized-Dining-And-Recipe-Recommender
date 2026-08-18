@@ -38,6 +38,10 @@ data/raw/synthetic-recipe-images.zip
 .idea/
 .vscode/
 
+# Notebooks
+*.ipynb
+.ipynb_checkpoints/
+
 # Downloaded image assets (keep zip in data/raw)
 data/images/**
 !data/images/.gitkeep
