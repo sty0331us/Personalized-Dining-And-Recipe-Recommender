@@ -1,0 +1,3 @@
+from pathlib import Path
+
+Path("data/images").mkdir(parents=True, exist_ok=True)
