@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+env/
+*.egg-info/
+.eggs/
+dist/
+build/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Environment and secrets
+.env
+.env.local
+*.pem
+
+# Vector store and model caches
+chroma_db/*
+!chroma_db/.gitkeep
+.cache/
+huggingface/
+.huggingface/
+
+# Local image archive exceeds GitHub's 100MB file limit
+data/raw/synthetic-recipe-images.zip
+*.zip
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+
+# Downloaded image assets (keep zip in data/raw)
+data/images/**
+!data/images/.gitkeep

@@ -1,0 +1,52 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "personalized-dining-recommender"
+version = "1.0.0"
+description = "Multimodal RAG dining and recipe recommender with LangGraph multi-agent orchestration and MCP tools."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "Personalized Dining And Recipe Recommender" }]
+dependencies = [
+    "python-dotenv>=1.0.1",
+    "pydantic>=2.7.0",
+    "pydantic-settings>=2.4.0",
+    "numpy>=1.26.0",
+    "pillow>=10.4.0",
+    "torch>=2.2.0",
+    "transformers>=4.44.0",
+    "sentence-transformers>=2.7.0",
+    "chromadb>=0.5.0",
+    "langchain>=0.3.0",
+    "langchain-core>=0.3.0",
+    "langchain-community>=0.3.0",
+    "langchain-chroma>=0.2.0",
+    "langchain-ibm>=0.3.0",
+    "langchain-openai>=0.2.0",
+    "langgraph>=0.2.0",
+    "fastmcp>=2.0.0",
+    "mcp>=1.0.0",
+    "gradio>=4.29.0",
+    "ibm-watsonx-ai>=1.1.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.2.0",
+    "pytest-asyncio>=0.23.0",
+]
+
+[project.scripts]
+pdr-ingest = "pdr.cli:ingest_main"
+pdr-ui = "pdr.ui.app:main"
+pdr-mcp = "pdr.mcp.server:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
