@@ -13,6 +13,30 @@ The original course notebooks remain in [`notebooks/archive`](notebooks/archive)
 
 ---
 
+## Demo
+
+Gradio **Connoisseur Companion** — empty chat, agent reasoning, then a structured California restaurant answer.
+
+### 1. Initial UI
+
+Empty session with vibe-oriented starters for California dining.
+
+![Initial UI](docs/screenshots/01-initial-ui.png)
+
+### 2. Model's Reasoning UI
+
+The host shows **Thinking...** while LangGraph runs multimodal RAG and the specialist agents.
+
+![Model's Reasoning UI](docs/screenshots/02-reasoning-ui.png)
+
+### 3. Result UI
+
+A zen Little Tokyo query resolved to **Sakura Garden**, with neighborhood, cuisine, rating, and price in a structured table.
+
+![Result UI](docs/screenshots/03-result-ui.png)
+
+---
+
 ## What this system does
 
 A diner describes a craving, a vibe, a neighborhood, or a dietary constraint — and can optionally upload a dish photo. The system:
