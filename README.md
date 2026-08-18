@@ -9,7 +9,7 @@ Production system for **California restaurant discovery** and **home-cooking rec
 - **MCP tool calling** — lookup, vibe search, reviews, and recommendation tools
 - **Gradio UI** — chat, photo upload, taste profile, and catalog edits
 
-The original course notebooks remain in [`notebooks/archive`](notebooks/archive) as design history. The runnable product lives in [`src/pdr`](src/pdr).
+The runnable product lives in [`src/pdr`](src/pdr).
 
 ---
 
@@ -237,7 +237,7 @@ MCP tools the host can call without running the full graph:
 ├── data/raw/                          # culinary map + dish-photo zip
 ├── scripts/ingest.py                  # build vector indexes
 ├── tests/
-└── notebooks/archive/                 # original labs
+└── docs/screenshots/                  # Gradio demo captures
 ```
 
 ---
